@@ -1,0 +1,9 @@
+version: '3.4'
+services:
+  bash:
+    image: bash:5.1.8
+    command: bash
+    env_file: .env
+    volumes:
+      - .:/opt/app
+    working_dir: /opt/app
